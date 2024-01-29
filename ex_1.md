@@ -8,7 +8,12 @@
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+	lastName, firstName, jobTitle
+from 
+	employees
+where 
+	jobTitle = 'Sales Rep';
 ```
 
 Output
@@ -45,7 +50,13 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    lastName, firstName, jobTitle
+from 
+    employees
+where 
+    jobTitle = 'Sales Rep' and
+    officeCode = 1;
 ```
 
 Output
@@ -67,7 +78,14 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    lastName, firstName, officeCode
+from 
+    employees;
+where 
+    officeCode = 1 or 
+    officeCode = 2 or 
+    officeCode = 3;
 ```
 
 Output
@@ -98,7 +116,13 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    contactLastname, contactFirstname
+from 
+    customers
+order by 
+    contactLastname DESC , 
+    contactFirstname DESC;
 ```
 
 Output
@@ -127,7 +151,13 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    lastname, firstname, officeCode
+from 
+    employees
+where 
+    officeCode = 6 or 
+    officeCode = 7;
 ```
 
 Output
@@ -154,7 +184,13 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    lastname, firstname, officeCode
+from 
+    employees
+where 
+    jobTitle = 'Sales Rep' and 
+    officeCode = 1;
 ```
 
 Output
@@ -177,7 +213,12 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    lastname
+from 
+    employees
+order by
+    lastname;
 ```
 
 Output
@@ -210,7 +251,13 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    customername, country, state
+from 
+    customers
+where 
+    country = 'USA' and 
+    state = 'CA';
 ```
 
 Output
@@ -241,7 +288,14 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+select 
+    customername, country, state, creditlimit
+from 
+    customers
+where 
+    country = 'USA' and 
+    state = 'CA' and 
+    creditlimit > 100000;
 ```
 
 Output
@@ -264,7 +318,12 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+SELECT
+	officeCode, city, phone, country
+FROM
+	offices
+WHERE
+	officeCode < 5;
 ```
 
 Output
